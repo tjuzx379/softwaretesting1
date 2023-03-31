@@ -29,7 +29,7 @@ assert welcome_message.text.startswith("You logged into a secure area!")
 logout_button = driver.find_element_by_xpath("/html/body/div[2]/div/div/a/i")
 logout_button.click()
 
-
+print(driver.current_url)
 
 # Close the web browser
 # driver.quit()

@@ -37,7 +37,7 @@ if driver.find_element(By.XPATH,
 if driver.find_element(By.XPATH,
                        "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[2]/div[2]/input").text == "":
     print("已显示错误信息")
-
+time.sleep(2)
 firstname_input.clear()
 lastname_input.clear()
 Email_input.clear()
@@ -68,4 +68,4 @@ if driver.find_element(By.XPATH,
                        "/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[2]/div[2]/input").text == "":
     print("已显示错误信息")
 time.sleep(5)
-driver.quit()
+#driver.quit()
